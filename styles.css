@@ -1,0 +1,1105 @@
+/* Import Gilroy font */
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Regular.woff2') format('woff2'),
+       url('/fonts/Gilroy-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url('/fonts/Gilroy-Bold.woff2') format('woff2'),
+       url('/fonts/Gilroy-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Reseting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set Gilroy as the default font for the entire document */
+body {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  font-family: 'Gilroy', sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+
+/* Main container styling */
+.Main-container{
+    width:100vw;
+}
+
+/* Container1 => Navbar styling */
+.container1{
+    background-image: linear-gradient(to left, #FEEFC7,#E3F1E7);
+    height:1230px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+.navbar{
+    top:42px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:70%;
+    height:52px;
+    margin:15px;
+    padding:10px 22px;
+    background: linear-gradient(120deg, #e8f5e9, #f1f8e9);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.apple_and_playStore_logo{
+    display: flex; 
+    align-items: center;
+}
+.nav_text{
+font-size: 10px;
+margin-right:10px;
+color:#787F88;
+font-weight:400;
+}
+.nav_logo{
+    margin:5px;
+}
+
+/* Container1 => text_container styling */
+.text_container{
+    position:relative;
+    top: 180px;
+    width:1330px;
+    height: 289px;
+}
+.heading h1{
+    font-size:90px;
+    line-height: 90px;
+    letter-spacing: -1px;
+    font-weight: 700; /* Default font weight for the heading */ 
+    text-align: center;
+    color: #0E1E14;
+}
+
+.text_container_span { 
+    font-weight: 400; /* Font weight for the span */ 
+    font-size:90px;
+    color:#0E1E14;
+}
+.text_container_para{
+    display:flex;
+    width:100%;
+    height: 64px;
+    justify-content: space-between;
+    align-items:center;
+    margin-top:20px;
+}
+.text_container_para img { 
+    vertical-align: middle; /* Align the image vertically in the middle */ 
+    margin-right: 5px; /* Added some space between the image and the text */ 
+}
+.text_container_para p{
+    font-size:24px;
+    align-items: center;
+    font-weight:500;
+    color:#0E1E14;
+}
+
+.phone-image-container {
+    max-width:100vw;
+    width: 1412px;;
+    margin: 8rem auto 0;
+    padding: 10px 20px;
+    padding-top:none;
+    height: 800px; /* Enforce a specific height */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
+    overflow: hidden; /* Prevent children from overflowing */
+    position: relative; /* Ensure relative positioning for child alignment */
+}
+
+.phone-wrapper {
+    width: 100%; /* Adjust to fit container */
+    height: 100%; /* Maintain height proportional to parent */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden; 
+}
+
+.phone-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Maintain aspect ratio within parent */
+    display: block; /* Avoid inline-block spacing issues */
+    margin: 0 auto; /* Center the image */
+}
+
+.round-logo{
+    margin-bottom: 1000px;
+    height: 400px;
+    width: 500px;
+    right:-150px;
+    position:fixed;
+}
+
+
+/* container2 styling */
+.container2{
+    position:relative;
+    top: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+.textBox_Why_pay_off{
+    display:flex;
+    width:100%;
+    height:100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:20px;
+}
+.textBox_Why_pay_off h2{
+    font-weight: 700;
+    font-size: 64px;
+    color:#0E1E14;
+}
+.textBox_Why_pay_off span{
+    font-weight: 400;
+    font-size: 64px;
+    color:#0E1E14;
+}
+hr{
+    border: 1px solid #D5D7DB;
+    margin: 16px 0;
+}
+
+
+/*styles for companies logo section */
+.companies_logo_background {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.companies_logo_background img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* textbox_how_to_pay_off styling */
+
+/* Desktop Styles for How to Pay Off Section */
+.textBox_how_to_pay_off {
+    width: 100%;
+    background-color: #F6FEF7;
+    padding: 120px 0; /* Changed to vertical padding only */
+}
+
+.inner_container {
+    width: 1200px; /* Fixed width for large screens */
+    max-width: 90%; /* Ensures some responsiveness */
+    margin: 0 auto;
+    padding: 0;
+}
+
+.inner_container h2 {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    text-align: center;
+    color: #0E1E14;
+    margin-bottom: 40px;
+}
+
+.textBox_how_to_pay_off_heading_span {
+    font-size: 64px;
+    font-weight: 400;
+    color: #0E1E14;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #D5D7DB;
+    margin: 40px 0;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    margin: 60px 0;
+}
+
+.section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+/* Image styles */
+.bright_card,
+.credit_cards img,
+.calender_coin {
+    width: 442px;
+    height: auto;
+    aspect-ratio: 442/468;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+/* Text content styles */
+.text_and_btn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 600px;
+}
+
+.step {
+    font-size: 18px;
+    font-weight: 700;
+    color: #68d391;
+    display: block;
+}
+
+.text_and_btn h3 {
+    font-size: 42px;
+    line-height: 50px;
+    color: #0E1E14;
+    margin: 0;
+    font-weight: 700;
+}
+
+.text_and_btn p {
+    font-size: 24px;
+    line-height: 32px;
+    color: #787F88;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+}
+
+/* Apply button styles */
+.apply_btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    color: #0E1E14;
+    text-decoration: none;
+    padding: 12px 0;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.apply_btn img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.apply_btn:hover {
+    color: #68d391;
+}
+
+.apply_btn:hover img {
+    transform: translateX(5px);
+}
+
+/* Remove duplicated styles */
+.inner_container {
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+h2 {
+    color: #0E1E14;
+}
+
+h2 span {
+    font-weight: 400;
+}
+/* Update the media queries for tablet and mobile */
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .section,
+    .section:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .section .text_and_btn {
+        order: 1; /* Force text to come first */
+    }
+
+    .section img,
+    .section .credit_cards {
+        order: 2; /* Force images to come second */
+    }
+
+    /* Rest of your tablet styles remain the same */
+    .textBox_how_to_pay_off {
+        padding: 60px 40px;
+    }
+
+    .inner_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inner_container h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .text_and_btn {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .bright_card,
+    .credit_cards img,
+    .calender_coin {
+        width: 100%;
+        max-width: 442px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .section,
+    .section:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .section .text_and_btn {
+        order: 1;
+    }
+
+    .section img,
+    .section .credit_cards {
+        order: 2;
+    }
+
+    /* Rest of your mobile styles remain the same */
+    .textBox_how_to_pay_off {
+        padding: 40px 20px;
+    }
+
+    .inner_container h2 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .bright_card,
+    .credit_cards img,
+    .calender_coin {
+        max-width: 335px;
+    }
+
+    .text_and_btn {
+        padding: 0 20px;
+    }
+}
+
+/* changing lives everyday styling */
+.changing_lives_everyday_container{
+    width:100%;
+    height:676px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.inner_changing_lives{
+    height: 436px;
+    width: 1468px;
+}
+.inner_changing_lives h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    color:#0E1E14;
+}
+.inner_changing_lives span{
+    font-size: 24px;
+    font-weight: 400;
+}
+.rating-cards img{
+    height: 220px;
+    width: 260px;
+    padding:28px;
+    border-radius:17px;
+}
+.rating-cards img:hover{
+    cursor:pointer;
+}
+
+/* frequently_asked_question_container styling */
+.frequently_asked_question_container{
+    width:100%;
+    height: 840px;
+    padding: 0 252px;
+    margin-top:40px;
+}
+.inner_questions_div{
+    height:600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.inner_questions_div h2{
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 72px;
+    color:#0E1E14;
+}
+.frequently_asked_question_heading_span{
+    font-weight: 400;
+    font-size:64px;
+    color:#0E1E14;
+}
+.frequently_asked_question_para{
+    font-size:24px;
+    font-weight: 500;
+    color:#030303;
+    line-height: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Desktop styles for crush_debt_backgound_img - the 100vw width to ensure full viewport width */
+.crush_debt_backgound_img {
+    width: 100vw; /* Full viewport width */
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    height: auto;
+    overflow: hidden;
+}
+
+.crush_debt_backgound_img img {
+    width: 100%;
+    height: auto;
+    display: block; /* Removes any unwanted space below image */
+    object-fit: cover;
+}
+
+/* final_text_container styling */
+.final_text_container{
+    height: 520px;
+    width:100%;
+    padding:120px 252px;
+    margin-bottom:50px;
+}
+.inner_text_div p,span{
+    font-size:16px;
+    font-weight: 500;
+    color:#787F88;
+}
+
+
+/* Mobile and Tablet Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Navbar adjustments */
+    .navbar {
+        width: 90%;
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    .apple_and_playStore_logo {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* Text container adjustments */
+    .text_container {
+        width: 100%;
+        top: 100px;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .heading h1 {
+        font-size: 40px;
+        line-height: 44px;
+        text-align: left;
+    }
+
+    .text_container_span {
+        font-size: 40px;
+    }
+
+    .text_container_para {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        height: auto;
+        margin-top: 30px;
+    }
+
+    .text_container_para p {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* Phone image container adjustments */
+    .phone-image-container {
+        width: 100%;
+        height: auto;
+        margin-top: 3rem;
+        padding: 0;
+    }
+
+    .phone-wrapper img {
+        width: 100%;
+        height: auto;
+    }
+
+    .round-logo {
+        display: none;
+    }
+
+    /* Container 2 adjustments */
+    .container2 {
+        top: 150px;
+    }
+
+    .textBox_Why_pay_off h2,
+    .textBox_Why_pay_off span {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    /* How to pay off section */
+    .textBox_how_to_pay_off {
+        padding: 40px 20px;
+    }
+
+    .inner_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inner_container h2,
+    .textBox_how_to_pay_off_heading_span {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .section {
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .bright_card,
+    .credit_cards img,
+    .calender_coin {
+        width: 100%;
+        height: auto;
+    }
+
+    .text_and_btn {
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        line-height: normal;
+    }
+
+    .text_and_btn h3 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .text_and_btn p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Rating cards section */
+    .changing_lives_everyday_container {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .inner_changing_lives {
+        width: 100%;
+        height: auto;
+    }
+
+    .inner_changing_lives h2 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .rating-cards {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 20px 0;
+        gap: 15px;
+    }
+
+    .rating-cards img {
+        width: 260px;
+        height: auto;
+        flex-shrink: 0;
+    }
+
+    /* FAQ section */
+    .frequently_asked_question_container {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    .inner_questions_div h2,
+    .frequently_asked_question_heading_span {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .frequently_asked_question_para {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Footer sections */
+    .crush_debt_backgound_img {
+        height: auto;
+    }
+
+    .crush_debt_backgound_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .final_text_container {
+        padding: 40px 20px;
+        height: auto;
+    }
+
+    /* Container1 height adjustment */
+    .container1 {
+        height: auto;
+        padding-bottom: 50px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    .heading h1 {
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .text_container_span {
+        font-size: 32px;
+    }
+
+    .nav_logo img {
+        height: 30px;
+        width: auto;
+    }
+}
+
+/* Mobile Navigation and Button Styles */
+.mobile-nav {
+    display: none;
+    width: 100%;
+    padding: 16px 20px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(120deg, #e8f5e9, #f1f8e9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.mobile-menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.mobile-menu-btn span {
+    width: 100%;
+    height: 2px;
+    background-color: #0E1E14;
+    transition: all 0.3s ease;
+}
+
+.mobile-logo {
+    height: 24px;
+    width: auto;
+}
+
+.mobile-apply-btn {
+    padding: 8px 16px;
+    background: #68d391;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.mobile-cta-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    padding: 0 20px;
+    margin-top: 32px;
+}
+
+.mobile-main-cta-span{
+    position:relative;
+    top:6px;
+    left:5px;
+}
+
+.mobile-main-cta {
+    width: 100%;
+    padding: 16px;
+    background: #0E1E14;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+}
+
+.store-btn {
+    display: flex;
+    align-items: center;
+}
+
+.store-btn img {
+    height: 40px;
+    width: auto;
+}
+
+/* Media Queries - Add to your existing media queries */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide original navbar */
+    }
+    
+    .mobile-nav {
+        display: flex;
+    }
+
+    .mobile-nav-img-div{
+        display:flex;
+        width: 100px;
+        justify-content: space-between;
+    }
+    
+    .mobile-cta-buttons {
+        display: flex;
+    }
+    
+    /* Adjust main container padding to account for fixed header */
+    .container1 {
+        padding-top: 60px;
+    }
+}
+
+/* Optional: Animation for menu button */
+.mobile-menu-btn.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.mobile-menu-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-menu-btn.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .textBox_how_to_pay_off {
+        padding: 60px 40px;
+    }
+
+    .inner_container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .inner_container h2 {
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .textBox_how_to_pay_off_heading_span {
+        font-size: 48px;
+    }
+
+    .text_and_btn {
+        width: 50%;
+        padding: 0 20px;
+        height: auto;
+        line-height: normal;
+    }
+
+    .bright_card,
+    .credit_cards img,
+    .calender_coin {
+        width: 45%;
+        height: auto;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .textBox_how_to_pay_off {
+        padding: 40px 20px;
+    }
+
+    .inner_container {
+        padding: 0;
+    }
+
+    .inner_container h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-bottom: 24px;
+        padding: 0 20px;
+    }
+
+    .textBox_how_to_pay_off_heading_span {
+        font-size: 28px;
+    }
+
+    /* Section layout */
+    .section {
+        flex-direction: column !important;
+        gap: 24px;
+        margin: 32px 0;
+    }
+
+    .section:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    /* Images */
+    .bright_card,
+    .credit_cards img,
+    .calender_coin {
+        width: 100%;
+        max-width: 335px;
+        height: auto;
+        aspect-ratio: 335/250;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+
+    /* Text content */
+    .text_and_btn {
+        width: 100%;
+        padding: 0 20px;
+        margin: 0;
+        height: auto;
+    }
+
+    .step {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 8px 0;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 8px 0 16px 0;
+    }
+
+    /* Apply button */
+    .apply_btn {
+        font-size: 16px;
+        padding: 8px 0;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .apply_btn img {
+        width: 20px;
+        height: 20px;
+        position: static;
+        top: 0;
+    }
+
+    /* Divider lines */
+    hr {
+        margin: 24px 0;
+        opacity: 0.5;
+    }
+}
+
+/* Small Mobile Devices */
+@media screen and (max-width: 480px) {
+    .textBox_how_to_pay_off {
+        padding: 32px 16px;
+    }
+
+    .inner_container h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .textBox_how_to_pay_off_heading_span {
+        font-size: 24px;
+    }
+}
+
+
+/* Tablet styles /* Desktop styles for companies logo section */
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+    .companies_logo_background {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 30px 20px;
+    }
+    
+    .companies_logo_background img {
+        max-width: 90%;
+        object-fit: contain;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .companies_logo_background {
+        padding: 20px;
+    }
+    
+    .companies_logo_background img {
+        max-width: 100%;
+    }
+}
+
+/* Small mobile styles */
+@media screen and (max-width: 480px) {
+    .companies_logo_background {
+        padding: 15px;
+    }
+}
+
+
+/* Tablet styles for crush_debt_backgound_img  */
+@media screen and (max-width: 1024px) {
+    .crush_debt_backgound_img {
+        width: 100%;
+        left: 0;
+        right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .crush_debt_backgound_img img {
+        height: auto;
+    }
+}
+
+/* Mobile styles */
+@media screen and (max-width: 768px) {
+    .crush_debt_backgound_img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
