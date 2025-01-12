@@ -49,7 +49,7 @@ bright-money-assignment/
 - Documentation of process
 
 ## Links
-- Deployed URL: [Bright Money Landing Page](https://brightmoney-landing-page.vercel.app/)
+- Project By HTML,CSS and JS: [Bright Money Landing Page](https://brightmoney-landing-page-1xzp.vercel.app/)
 - Webflow Project: [Bright Money Landing Page By WebFlow](https://bright-money-landing-page.webflow.io/)
 
 ## Technologies Used
