@@ -49,8 +49,8 @@ bright-money-assignment/
 - Documentation of process
 
 ## Links
-- Project using HTML,CSS and JS: [LINK](https://brightmoney-landing-page-1xzp.vercel.app/)
--  Project using Webflow: [LINK](https://bright-money-landing-page.webflow.io/)
+- Project using HTML,CSS and JS: [DEPLOYED LINK](https://brightmoney-landing-page-1xzp.vercel.app/)
+-  Project using Webflow: [DEPLOYED LINK](https://bright-money-landing-page.webflow.io/)
 
 ## Technologies Used
 - HTML5
